@@ -149,3 +149,12 @@
         height: 85vh;
     }
 }
+
+@media (max-width: 768px) {
+    .content-types-grid {
+        grid-template-columns: 1fr;
+    }
+    .content-types-items-group {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}

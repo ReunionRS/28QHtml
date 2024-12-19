@@ -233,4 +233,72 @@ footer {
     font-weight: 200;
 }
 
+.content-types {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+.content-types-subtitle{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-types h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.content-type-group h3{
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content-type-group h3 i{
+    margin-right: 10px;
+}
+.content-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.content-types-items-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.content-type-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.content-type-item:hover {
+    transform: translateY(-3px);
+}
+
+.content-type-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.content-type-item h4 {
+    font-size: 1rem;
+    color: #444;
+}
+
+
+
 
