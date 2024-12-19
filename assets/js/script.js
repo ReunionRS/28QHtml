@@ -1,32 +1,27 @@
-const caseVideos = document.querySelectorAll('.case-video iframe');
-const modal = document.querySelector('.modal');
-const modalContent = document.querySelector('.modal-content');
-const fullScreenVideo = document.getElementById('fullScreenVideo');
+document.addEventListener('DOMContentLoaded', function() {
+    const videoLinks = document.querySelectorAll('.case-item-link');
+    const modal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    const closeBtn = document.querySelector('.close');
 
-    caseVideos.forEach(video => {
-    video.addEventListener('click', (event) => {
-        modal.style.display = 'flex';
-        modalContent.style.display = 'flex';
-        fullScreenVideo.src = video.src;
+    videoLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const videoUrl = this.getAttribute('data-video');
+            videoFrame.src = videoUrl;
+            modal.style.display = 'block';
+        });
+    });
 
+    closeBtn.addEventListener('click', function() {
+        videoFrame.src = "";
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            videoFrame.src = "";
+            modal.style.display = 'none';
+        }
     });
 });
-
-    function closeModal() {
-    modal.style.display = 'none';
-    modalContent.style.display = 'none';
-    fullScreenVideo.src = ""; // Очистка iframe
-}
-
-
-
-    modal.addEventListener('click', (event) => {
-    if (event.target === modal){
-    closeModal();
-}
-});
-
-    modalContent.addEventListener('click', function(event){
-    event.stopPropagation();
-});
-

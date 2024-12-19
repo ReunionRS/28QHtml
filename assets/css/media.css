@@ -151,10 +151,32 @@
 }
 
 @media (max-width: 768px) {
+    .why-us-alt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us-alt-item {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .why-us-alt-icon{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .why-us-alt-text{
+        text-align: center;
+    }
+
     .content-types-grid {
         grid-template-columns: 1fr;
     }
     .content-types-items-group {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .form-wrapper {
+        padding: 15px;
     }
 }
