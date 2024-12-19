@@ -1,10 +1,10 @@
-
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     nav{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 0 1rem;
+        padding: 0 1rem; /* Отступ по бокам */
     }
     nav ul {
         flex-direction: column;
@@ -20,7 +20,7 @@
     .nav-toggle-label {
         display: block;
     }
-
+    /*  Скрываем навигацию, что бы использовать кнопку */
     #nav-menu {
         position: fixed;
         top: 0;
@@ -51,8 +51,18 @@
     .footer-content > * {
         margin-bottom: 1rem;
     }
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    .general {
+        height: 70vh;
+    }
 }
 
+/* Добавляем промежуточные медиазапросы для более плавного изменения на планшетах и ноутбуках */
 @media (min-width: 769px) and (max-width: 992px) {
     nav {
         width: 95%;
@@ -73,8 +83,14 @@
     .cases-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-    .footer-content {
-        justify-content: space-around;
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+    .general {
+        height: 80vh;
     }
 }
 
@@ -95,6 +111,15 @@
     .switch_category h2 {
         font-size: 1.4rem;
     }
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+    .general {
+        height: 83vh;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -113,5 +138,14 @@
     }
     .switch_category h2 {
         font-size: 1.5rem;
+    }
+    .hero-content h1 {
+        font-size: 6rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    .general {
+        height: 85vh;
     }
 }
