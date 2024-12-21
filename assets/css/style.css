@@ -275,69 +275,76 @@ footer {
 }
 
 .content-types {
-    background-color: #f7f7f7;
     padding: 60px 0;
+    background-color: #f9f9f9;
 }
-.content-types-subtitle{
+
+.content-types h1 {
     text-align: center;
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #333;
 }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.content-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.content-item:hover {
+    transform: translateY(-5px);
+}
+
+.content-item i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.content-item h3 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.view-more-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.content-types h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-.content-type-group h3{
-    font-size: 1.7rem;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.content-type-group h3 i{
-    margin-right: 10px;
-}
-.content-types-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-.content-types-items-group {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 15px;
-}
-
-.content-type-item {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-}
-
-.content-type-item:hover {
-    transform: translateY(-3px);
-}
-
-.content-type-item img {
-    max-width: 50px;
-    margin-bottom: 10px;
-}
-
-.content-type-item h4 {
-    font-size: 1rem;
-    color: #444;
 }
 
 .why-us-alt {
@@ -542,26 +549,33 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
 .contact-form {
     background-color: #f9f9f9;
     padding: 60px 0;
 }
 
+.contact-form .container {
+    display: flex;
+    align-items: flex-start; /* выравнивание по верхнему краю */
+    justify-content: center; /* центрирование по горизонтали */
+    max-width: 1200px; /* максимальная ширина контейнера */
+    margin: 0 auto; /* центрирование контейнера */
+}
+
 .contact-form h2 {
-    text-align: center;
+    text-align: left; /* выравниваем заголовок по левому краю */
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
 }
 
 .form-wrapper {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 60%; /* 60% ширины для формы */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin-right: 20px; /* отступ между формой и изображением */
 }
 
 .form-group {
@@ -588,16 +602,17 @@ footer {
     transition: border-color 0.3s ease;
     font-family: "Jura", serif;
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #007bff;
     outline: none;
 }
+
 .form-group textarea {
     resize: none;
-    height:275px;
+    height: 275px; /* фиксированная высота textarea */
 }
-
 
 .submit-button {
     display: block;
@@ -616,6 +631,20 @@ footer {
 
 .submit-button:hover {
     background-color: #0056b3;
+}
+
+.contact-image {
+    width: 40%; /* 40% ширины для изображения */
+    margin-left: 20px; /* отступ между формой и изображением */
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .services-hero {
