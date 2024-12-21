@@ -1,10 +1,10 @@
-/* Адаптивность для мобильных устройств */
+/* Адаптивность */
 @media (max-width: 768px) {
     nav{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 0 1rem; /* Отступ по бокам */
+        padding: 0 1rem;
     }
     nav ul {
         flex-direction: column;
@@ -20,7 +20,7 @@
     .nav-toggle-label {
         display: block;
     }
-    /*  Скрываем навигацию, что бы использовать кнопку */
+
     #nav-menu {
         position: fixed;
         top: 0;
@@ -62,7 +62,6 @@
     }
 }
 
-/* Добавляем промежуточные медиазапросы для более плавного изменения на планшетах и ноутбуках */
 @media (min-width: 769px) and (max-width: 992px) {
     nav {
         width: 95%;
@@ -175,8 +174,83 @@
     .content-types-items-group {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
+}
+
+@media (max-width: 768px) {
+    .contact-form .container-form {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+
+    }
+    .form-wrapper, .contact-form img {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    .contact-form img {
+        display: none;
+    }
+    .contact-form h2 {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .form-wrapper {
+        width: 50%;
+        margin-left: 5%;
+    }
+    .contact-form img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
 
     .form-wrapper {
-        padding: 15px;
+        width: 30%;
+        margin-left: 15%;
+    }
+
+    .contact-form img {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto 20px;
+    }
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .map-container iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .map-container iframe {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .map-container iframe {
+        width: 48rem;
+        height: 47rem;
     }
 }

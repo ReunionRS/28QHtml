@@ -17,10 +17,12 @@
         <label for="nav-toggle" class="nav-toggle-label">
             <span class="hamburger"></span>
         </label>
-        <img src="assets/image/svg/Logo.svg" alt="Логотип">
+        <a href="general.html" class="logo-link"> <!-- Оборачиваем логотип ссылкой -->
+            <img src="assets/image/svg/Logo.svg" alt="Логотип" class="logo"> <!-- Добавляем класс для стилизации -->
+        </a>
         <ul id="nav-menu">
             <li>
-                <a href="index.html">Главная</a>
+                <a href="general.html">Главная</a>
             </li>
             <li>
                 <a href="cases.html">Кейсы</a>
@@ -38,32 +40,29 @@
     </nav>
 </header>
 <section class="contact-form">
-    <div class="container">
-        <div class="form-wrapper">
+    <div class="container-form">
+        <form action="#" method="post" class="form-wrapper">
             <h2>Свяжитесь с нами</h2>
-            <form action="#" method="post" class="form-inner">
-                <div class="form-group">
-                    <label for="name">ФИО</label>
-                    <input type="text" id="name" name="name" placeholder="Введите ваше полное имя" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Почта</label>
-                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Номер телефона</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Сообщение</label>
-                    <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Отправить</button>
-            </form>
-        </div>
-
-        <div class="contact-image">
-            <img src="assets/image/png/image%203.png" alt="Камера">
+            <div class="form-group">
+                <label for="name">ФИО</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше полное имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
+        <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?from=api-maps&indoorLevel=1&ll=53.202845%2C56.847520&mode=routes&origin=jsapi_2_1_79&rtext=~56.847662%2C53.202895&rtt=mt&ruri=~&z=19.98" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
         </div>
     </div>
 </section>

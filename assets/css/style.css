@@ -27,6 +27,12 @@ header{
     align-items: center;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -288,7 +294,7 @@ footer {
 
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 20px;
 }
@@ -506,11 +512,7 @@ footer {
 .cases-button:hover {
     background-color: #0056b3;
 }
-@media (max-width: 768px) {
-    .cases-grid {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 .modal {
     display: none;
@@ -549,34 +551,37 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
 .contact-form {
     background-color: #f9f9f9;
     padding: 60px 0;
 }
 
-.contact-form .container {
+.contact-form .container-form {
     display: flex;
-    align-items: flex-start; /* выравнивание по верхнему краю */
-    justify-content: center; /* центрирование по горизонтали */
-    max-width: 1200px; /* максимальная ширина контейнера */
-    margin: 0 auto; /* центрирование контейнера */
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .contact-form h2 {
-    text-align: left; /* выравниваем заголовок по левому краю */
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
 }
 
 .form-wrapper {
-    width: 60%; /* 60% ширины для формы */
+    width: 37%;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    margin-right: 20px; /* отступ между формой и изображением */
+    margin-left: 13%;
 }
+
 
 .form-group {
     margin-bottom: 20px;
@@ -611,7 +616,7 @@ footer {
 
 .form-group textarea {
     resize: none;
-    height: 275px; /* фиксированная высота textarea */
+    height: 275px;
 }
 
 .submit-button {
@@ -632,20 +637,13 @@ footer {
 .submit-button:hover {
     background-color: #0056b3;
 }
-
-.contact-image {
-    width: 40%; /* 40% ширины для изображения */
-    margin-left: 20px; /* отступ между формой и изображением */
-    text-align: center;
+.map-container iframe {
+    width: 48rem;
+    height: 47rem;
+    border: none;
+    border-radius: 0 10px 10px 0;
 }
 
-.contact-image img {
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
 .services-hero {
     background-image: url('../image/png/camera.png');
@@ -733,7 +731,3 @@ footer {
     line-height: 1.4;
 }
 
-.container-form{
-    display: flex;
-    flex-direction: row;
-}
