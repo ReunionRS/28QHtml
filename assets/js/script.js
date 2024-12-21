@@ -1,3 +1,13 @@
+// Активная страница
+const navLinks = document.querySelectorAll('nav ul li a.page-link');
+const currentURL = window.location.href;
+
+navLinks.forEach(link => {
+    if (link.href === currentURL) {
+        link.classList.add('active');
+    }
+});
+
 /*Модалка для блока "Примеры наших работ" */
 
 document.addEventListener('DOMContentLoaded', function() {
