@@ -58,7 +58,7 @@
         font-size: 1.2rem;
     }
     .general {
-        height: 70vh;
+        height: 90vh;
     }
 }
 
@@ -89,7 +89,7 @@
         font-size: 1.3rem;
     }
     .general {
-        height: 80vh;
+        height: 90vh;
     }
 }
 
@@ -100,6 +100,7 @@
     nav ul li {
         font-size: 1.1rem;
         margin: 0 1.3rem;
+        text-align: center;
     }
     nav img{
         margin-left: 1.5rem;
@@ -117,11 +118,11 @@
         font-size: 1.4rem;
     }
     .general {
-        height: 83vh;
+        height: 90vh;
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1301px) {
     nav {
         width: 80%;
     }
@@ -145,7 +146,7 @@
         font-size: 1.5rem;
     }
     .general {
-        height: 85vh;
+        height: 90vh;
     }
 }
 
@@ -252,5 +253,18 @@
     .map-container iframe {
         width: 48rem;
         height: 47rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-cases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cases-item-preview {
+        height: 200px;
+    }
+    .cases-open-modal-btn{
+        bottom: 20px;
     }
 }

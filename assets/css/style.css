@@ -127,30 +127,195 @@ footer {
     margin-right: .5rem;
 }
 
-.page_cases {
-    width: 100%;
-    padding: 3rem 0;
-    background-color: black;
-    text-align: center;
+.cases-page {
+    padding: 60px 0;
+    background-color: #f9f9f9;
 }
-.our_cases {
+
+.cases-page .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 20px;
 }
-.our_cases h1{
-    margin-bottom: 2rem;
-    font-size: 2rem;
+
+.cases-page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cases-page p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.cases-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cases-category-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Jura", serif;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+}
+
+.cases-category-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.cases-category-btn.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.cases-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cases-item:hover {
+    transform: translateY(-5px);
+}
+
+.cases-item-preview {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.cases-item:hover .cases-item-preview {
+    transform: scale(1.1);
+}
+
+.cases-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 0 10px 10px 10px;
+}
+
+.cases-item:hover .cases-item-overlay {
+    opacity: 1;
+}
+
+.cases-item-overlay h3 {
     color: white;
-}
-.switch_category {
-    margin-bottom: 2rem;
-}
-.switch_category h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+.cases-item-overlay p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.cases-open-modal-btn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-family: "Jura", serif;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    font-size: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+
+.cases-open-modal-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Стили для модального окна */
+.cases-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 70%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cases-close-modal-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cases-close-modal-btn:hover {
+    color: black;
+}
+
+.cases-modal-video {
+    width: 100%;
+    display: block;
+}
+
+
 .buttons button {
     background-color: transparent;
     color: white;
@@ -423,9 +588,9 @@ footer {
     color: #333;
 }
 
-.cases-grid {
+.our-cases-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 

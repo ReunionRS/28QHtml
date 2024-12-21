@@ -8,6 +8,7 @@
     <title>28q</title>
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/media.css" rel="stylesheet">
+    <link rel="icon" href="assets/image/png/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -17,8 +18,8 @@
         <label for="nav-toggle" class="nav-toggle-label">
             <span class="hamburger"></span>
         </label>
-        <a href="general.html" class="logo-link"> <!-- Оборачиваем логотип ссылкой -->
-            <img src="assets/image/svg/Logo.svg" alt="Логотип" class="logo"> <!-- Добавляем класс для стилизации -->
+        <a href="general.html" class="logo-link">
+            <img src="assets/image/svg/Logo.svg" alt="Логотип" class="logo">
         </a>
         <ul id="nav-menu">
             <li>
@@ -39,75 +40,99 @@
         </ul>
     </nav>
 </header>
-<section class="page_cases">
-    <div class="our_cases">
-        <h1>Наше портфолио</h1>
-        <div class="switch_category">
-            <h2>Выберите категорию</h2>
-            <div class="buttons">
-                <button class="active">Все</button>
-                <button>Реклама</button>
-                <button>Virtual Production</button>
+<section class="cases-page">
+    <div class="container">
+        <h2>Наши кейсы</h2>
+        <div class="cases-categories">
+            <button class="cases-category-btn active" data-category="all">Все</button>
+            <button class="cases-category-btn" data-category="advertising">Реклама</button>
+            <button class="cases-category-btn" data-category="virtual-production">Virtual Production</button>
+        </div>
+        <div class="our-cases-grid">
+            <div class="cases-item" data-category="advertising" data-video="assets/video/video.mp4" data-poster="assets/image/png/video-poster1.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/1.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 1</h3>
+                    <p>Краткое описание кейса 1...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="advertising" data-video="assets/video/video.mp4" data-poster="assets/image/png/video-poster1.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/1.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 1</h3>
+                    <p>Краткое описание кейса 1...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="advertising" data-video="assets/video/video.mp4" data-poster="assets/image/png/video-poster1.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/1.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 1</h3>
+                    <p>Краткое описание кейса 1...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="virtual-production" data-video="assets/video/video2.mp4" data-poster="assets/image/png/video-poster2.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/2.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 2</h3>
+                    <p>Краткое описание кейса 2...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="virtual-production" data-video="assets/video/video2.mp4" data-poster="assets/image/png/video-poster2.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/2.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 2</h3>
+                    <p>Краткое описание кейса 2...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="virtual-production" data-video="assets/video/video2.mp4" data-poster="assets/image/png/video-poster2.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/2.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 2</h3>
+                    <p>Краткое описание кейса 2...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="virtual-production" data-video="assets/video/video2.mp4" data-poster="assets/image/png/video-poster2.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/2.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 2</h3>
+                    <p>Краткое описание кейса 2...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="virtual-production" data-video="assets/video/video2.mp4" data-poster="assets/image/png/video-poster2.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/2.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 2</h3>
+                    <p>Краткое описание кейса 2...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
+            </div>
+            <div class="cases-item" data-category="advertising" data-video="assets/video/video.mp4" data-poster="assets/image/png/video-poster1.jpg">
+                <div class="cases-item-preview" style="background-image: url('assets/image/preview/1.jpg')"></div>
+                <div class="cases-item-overlay">
+                    <h3>Название кейса 1</h3>
+                    <p>Краткое описание кейса 1...</p>
+                    <button class="cases-open-modal-btn">Посмотреть видео</button>
+                </div>
             </div>
         </div>
-        <div class="cases-grid">
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-            <div class="case-card">
-                <div class="case-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <h3 class="case-title">Пример 3</h3>
-            </div>
-        </div>
+
     </div>
 </section>
+
+<div class="cases-modal" id="videoModal">
+    <div class="cases-modal-content">
+        <span class="cases-close-modal-btn">&times;</span>
+        <video src="" controls autoplay class="cases-modal-video"></video>
+    </div>
+</div>
+
 <footer>
     <div class="footer-content">
         <img src="assets/image/svg/Logo.svg" alt="Логотип">
@@ -121,5 +146,6 @@
         </div>
     </div>
 </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
